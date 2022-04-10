@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Genre</title>
+    <link rel="stylesheet" href="css/Genre.css" />
+    <link rel="stylesheet" href="css/dice.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Boxicons CDN Link -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <header>
+        <div class="heading">
+          <img src="images/REMOVED 1.png" alt="" class="logo" />
+          <h1>Maths Association, BITS Pilani</h1>
+          <h3 id="B4MO">GAMBLING MATHEMATICS ROUND 2</h3>
+          
+        </div>
+        <!-- exit button -->
+    </header>
+
+    <div class="main">
+        <div class="genre-list">
+            <ul role="listbox" tabindex="0" aria-label="genre list">
+                <h1>Choose Your Genre</h1>
+                <li tabindex="-1" option="1" aria-checked="false">
+                <input tabindex="-1" id="checkbox-1" type="checkbox">
+                     Sequences
+                </li>
+                <li tabindex="-1" option="2" aria-checked="false">
+                    <input tabindex="-1" id="checkbox-2" type="checkbox">
+                    Applications of Derivative
+                </li>
+                <li tabindex="-1" option="3" aria-checked="false">
+                    <input tabindex="-1" id="checkbox-3" type="checkbox">
+                    Complex Numbers
+                </li>
+                <li tabindex="-1" option="4" aria-checked="false">
+                    <input tabindex="-1" id="checkbox-4" type="checkbox">
+                    Conic Section
+                </li>
+                <li tabindex="-1" option="5" aria-checked="false">
+                    <input tabindex="-1" id="checkbox-5" type="checkbox">
+                    Functions and Relations
+                </li>
+                <li tabindex="-1" option="6" aria-checked="false">
+                    <input tabindex="-1" id="checkbox-6" type="checkbox">
+                    Integration
+                </li>
+            </ul>
+            <!-- <button id="submit_button" type="submit">Check</button> -->
+        </div>
+        <div class="genre-var">
+            <div class="lc">
+                <div class="level">
+                    <p id="LEVEL">Level 1</p>
+                </div>
+                <div class="coins">
+                    <h3>Coins =&nbsp</h3>
+                    <p id="money1">1200</p>
+                </div>
+            </div>
+            <div class="dice">
+                <ol class="die-list odd-roll" data-roll="1" id="die-2">
+                  <li class="die-item" data-side="1">
+                    <span class="dot"></span>
+                  </li>
+                  <li class="die-item" data-side="2">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </li>
+                  <li class="die-item" data-side="3">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </li>
+                  <li class="die-item" data-side="4">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </li>
+                  <li class="die-item" data-side="5">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </li>
+                  <li class="die-item" data-side="6">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </li>
+                </ol>
+                <form action="">
+                <button type="button" id="roll-button">Roll Dice</button>
+                </form>
+            </div>
+            <div class="cube-res">
+                <p id="res"></p>
+                <h1 id="match"></h1>
+             
+            </div>
+        </div>
+        <a href="" id="see_question"></a>
+
+    </div>
+    <script src="js/genre.js"></script>
+    <a href="/question">main</a>
+    <script>
+      function preback(){window.history.forward();}
+setTimeout("preback()",0);
+window.onunload=function(){null};
+    </script>
+</body>
+</html>

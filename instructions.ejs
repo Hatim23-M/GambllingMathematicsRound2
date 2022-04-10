@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/intro.css">  
+  <title>Instructions Page</title>
+</head>
+<body>
+  <div class="header">
+    <div class="header_left">
+      <strong><h1>Instructions</h1></strong>
+    </div>
+    <div class="header_right">
+      <strong><h2>GAMBLING MATHEMATICS ROUND 2</h2></strong>
+    </div>
+  </div>  
+  <br>
+  <div class="main_body">
+    <div class="top">
+      <strong>READ INSTRUCTIONS CAREFULLY</strong><br>
+      Congratulations for clearing round 1!!! 
+      <ul>
+        <li>
+          The round 2 consists of 6 levels. Each level consists of 1 question.
+          You start with 1200 coins initially.
+        </li>
+        <li>
+          You will be given 6 topics, to select each topic you have to spend 50 coins. After selecting topic(s) you will roll a die, if your selected topic comes, you'll be able to attempt the question. If your topic doesn't come, you can re-roll the dice and also alter your topic selection.
+        </li>
+        <li>
+          For each roll your coins will be deducted, the number of coins to be deducted will be decided by the formula *n*50*, where n = no of selected topics.
+Once your topic comes, you'll start with the question. 
+
+        </li>
+        <li>
+          Each question has 4 options. Only one of them will be correct.
+        </li>
+        <li>
+          Every option has bets given below it on the dropdown list. You can bet 0,100,200 or 300 in any/all options.
+          Your coins will be updated based on the formula : (Bet on correct option - (Sum of bets on incorrect option)).
+        </li>
+        <li>
+          Suppose you set a bet of 300 on option A of a question and 0 on B C and D. Let's suppose the correct answer is also A, your coins will be updated by 300. 
+          Let's take another example.
+          Suppose you bet 300 on A, 200 on B, 100 on C and 0 on D. And let's say option B is correct. Your coins will be updated by -200.
+        </li>
+        <li>
+          If you exhaust your coins, you'll be automatically disqualified. 
+Winner will be decided on the number of coins remaining after 6 levels.
+In case of a tie(same no of coins), the person who completes 6 levels in least time will be the winner.
+        </li>
+      </ul>
+      
+      <!-- <img src="https://images.template.net/wp-content/uploads/2016/07/13124428/Exam-instruction-template.jpg0" alt="currently unavailable"> -->
+    </div>
+    <br>
+    <div class="bottom">
+      <a href="/choosegenre">
+        <button>NEXT</button>
+      </a>
+    </div>
+  </div>
+  <script>
+    function preback(){window.history.forward();}
+setTimeout("preback()",0);
+window.onunload=function(){null};
+localStorage.setItem("coin",1200);
+localStorage.setItem("level",1);
+  </script>
+</body>
+</html>

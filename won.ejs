@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Completed</title>
+    <style>
+        *{
+            background-color: cornsilk;
+            overflow: hidden;
+        }
+        h1{
+            font-size: 40px;
+            text-align: center;
+            margin-top: 4.5em;
+            padding: 40px;
+        }
+    .coins{
+        display: flex;
+        flex-direction: row;
+        padding: 13px 17px;
+        background-color: cornsilk;
+        border: 1px solid black;
+        border-radius: 20px;
+    }
+    .coins h3{
+        font-size: 30px;
+        color: black; 
+        text-align: center;  
+        margin-left: 15em;
+
+    }
+    .coins p{
+        font-size: 30px;
+        text-align: center;  
+        margin-left: 1em;
+        color: blue;
+    }
+    </style>
+</head>
+<body>
+    <h1>CONGRATULATIONS!!<br> You have completed Round 2 of Gambling Mathematics.</h1>
+    </body><form action="/completed" method="post">
+    <div class="coins">
+        <h3>Your Final Score is </h3>
+        <p id="money1" name="Final_Coins">200</p>
+    </div>
+</form>
+</body>
+<script>
+    document.getElementById("money1").innerHTML=localStorage.getItem("coin");
+</script>
+</html>
